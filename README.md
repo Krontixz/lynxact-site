@@ -7,8 +7,8 @@ Source code of [lynxact.lxlynx.com](https://lynxact.lxlynx.com), the official si
 LynxAct turns match footage into tactical insight:
 
 - **Tactical Annotation** — VLM-assisted pre-annotation with human expert review
-- **AI Coach Agent** — LLM agent producing natural-language tactical reports (`lynxact-coach`, open-sourcing soon under Apache-2.0)
-- **Player Tracking** — pipeline extracting 2D pitch coordinates from broadcast footage (`lynxmove-oss`, open-sourcing soon under Apache-2.0)
+- **AI Coach Agent** — LLM agent producing natural-language tactical reports ([lynxact-coach](https://github.com/Lxcardoza993/lynxact-coach))
+- **Player Tracking** — open pipeline extracting 2D pitch coordinates from broadcast footage ([lynxmove-oss](https://github.com/Lxcardoza993/lynxmove-oss))
 
 ## Stack
 
