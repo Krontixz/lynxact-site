@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LynxAct — AI-Powered Sports Video Intelligence</title>
+  <meta name="description" content="LynxAct turns match footage into tactical insight. VLM-assisted annotation, player tracking, and LLM coaching reports — built by Hangzhou Lingxu Technology.">
+  <meta property="og:title" content="LynxAct — AI-Powered Sports Video Intelligence">
+  <meta property="og:description" content="From raw match footage to coach-ready tactical reports. Open-source pipelines for sports video annotation, tracking, and LLM analysis.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lynxact.lxlynx.com/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='44' fill='none' stroke='%2300e676' stroke-width='8'/%3E%3Cline x1='50' y1='6' x2='50' y2='94' stroke='%2300e676' stroke-width='8'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Pitch-lines background decoration -->
+  <svg class="pitch-bg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <g fill="none" stroke="currentColor" stroke-width="2">
+      <rect x="60" y="60" width="1080" height="680" rx="4"/>
+      <line x1="600" y1="60" x2="600" y2="740"/>
+      <circle cx="600" cy="400" r="110"/>
+      <circle cx="600" cy="400" r="5" fill="currentColor"/>
+      <rect x="60" y="230" width="180" height="340"/>
+      <rect x="960" y="230" width="180" height="340"/>
+      <rect x="60" y="310" width="70" height="180"/>
+      <rect x="1070" y="310" width="70" height="180"/>
+    </g>
+  </svg>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#top" aria-label="LynxAct home">
+        <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true">
+          <circle cx="50" cy="50" r="42" fill="none" stroke="currentColor" stroke-width="9"/>
+          <line x1="50" y1="8" x2="50" y2="92" stroke="currentColor" stroke-width="9"/>
+        </svg>
+        <span>Lynx<em>Act</em></span>
+      </a>
+      <div class="nav-links">
+        <a href="#products">Products</a>
+        <a href="#technology">Technology</a>
+        <a href="#opensource">Open Source</a>
+        <a href="#company">Company</a>
+        <a class="nav-cta" href="https://github.com/lynxact" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="hero-inner">
+      <p class="eyebrow reveal">Sports Video Intelligence · Hangzhou, China</p>
+      <h1 class="reveal">From match footage to<br><span class="accent">tactical insight</span>.</h1>
+      <p class="lede reveal">LynxAct combines vision-language models, multi-object tracking, and LLM
+        reasoning to automate sports video analysis — from annotation pipelines
+        to coach-ready tactical reports.</p>
+      <div class="hero-cta reveal">
+        <a class="btn btn-primary" href="https://github.com/lynxact" target="_blank" rel="noopener">View on GitHub</a>
+        <a class="btn btn-ghost" href="#demo">See it in action</a>
+      </div>
+      <dl class="hero-stats reveal">
+        <div><dt>98.7%</dt><dd>zero-shot VLM accuracy<br>on activity recognition probe</dd></div>
+        <div><dt>±1 m</dt><dd>pitch calibration<br>reprojection accuracy</dd></div>
+        <div><dt>4-tool</dt><dd>function-calling loop<br>in the AI Coach Agent</dd></div>
+      </dl>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="section" id="products">
+      <div class="section-head reveal">
+        <p class="eyebrow">Products</p>
+        <h2>One pipeline, three layers</h2>
+        <p class="section-sub">We build open tooling for every layer of sports video understanding —
+          so clubs, analysts, and researchers can adopt exactly the depth they need.</p>
+      </div>
+      <div class="cards">
+        <article class="card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+          </div>
+          <h3>Tactical Annotation</h3>
+          <p>VLM-assisted pre-annotation with human expert review. Annotators verify
+            machine proposals instead of labeling from scratch — cutting manual
+            tagging time by an order of magnitude while keeping expert judgment
+            in the loop.</p>
+          <p class="card-tag">VLM pre-labeling · Expert verification · Event taxonomy</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"/></svg>
+          </div>
+          <h3>AI Coach Agent</h3>
+          <p>An LLM agent that turns match data into natural-language tactical
+            reports. A four-tool function-calling loop queries events, surfaces
+            patterns, and drafts analysis a coach can act on — backed by a curated
+            library of 62 technique cards.</p>
+          <p class="card-tag">LLM reasoning · Function calling · Tactical reports</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg>
+          </div>
+          <h3>Player Tracking</h3>
+          <p>An open pipeline that extracts 2D pitch coordinates from broadcast
+            footage — detection, multi-object tracking, and pitch calibration.
+            Validated on professional match footage with sub-meter reprojection
+            accuracy.</p>
+          <p class="card-tag">YOLO · ByteTrack · Homography calibration</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="technology">
+      <div class="section-head reveal">
+        <p class="eyebrow">Technology</p>
+        <h2>Measured, not promised</h2>
+        <p class="section-sub">Every capability on this page is backed by a reproducible probe
+          on real data. Here is what we have verified so far.</p>
+      </div>
+      <div class="metric-grid">
+        <div class="metric reveal"><span class="metric-num">98.7<span class="unit">%</span></span><span class="metric-label">Zero-shot VLM accuracy on a 150-image activity-recognition probe (Stanford40), 8 of 10 classes perfect</span></div>
+        <div class="metric reveal"><span class="metric-num">0.62–1.25<span class="unit">m</span></span><span class="metric-label">Pitch-calibration reprojection error on professional broadcast footage, 5-anchor homography</span></div>
+        <div class="metric reveal"><span class="metric-num">95.7<span class="unit">%</span></span><span class="metric-label">Of frames with ≥8 tracked players — 12.84 players per frame on average, YOLOv8 + ByteTrack</span></div>
+        <div class="metric reveal"><span class="metric-num">62</span><span class="metric-label">Technique cards in the Coach Agent knowledge base, covering dribbling, passing, and finishing</span></div>
+      </div>
+
+      <div class="pipeline reveal" aria-label="Processing pipeline">
+        <div class="pipe-step"><span class="pipe-dot"></span>Match footage</div>
+        <div class="pipe-arrow" aria-hidden="true">→</div>
+        <div class="pipe-step"><span class="pipe-dot"></span>Detection &amp; tracking</div>
+        <div class="pipe-arrow" aria-hidden="true">→</div>
+        <div class="pipe-step"><span class="pipe-dot"></span>Pitch calibration</div>
+        <div class="pipe-arrow" aria-hidden="true">→</div>
+        <div class="pipe-step"><span class="pipe-dot"></span>Tactical events</div>
+        <div class="pipe-arrow" aria-hidden="true">→</div>
+        <div class="pipe-step"><span class="pipe-dot"></span>LLM analysis</div>
+        <div class="pipe-arrow" aria-hidden="true">→</div>
+        <div class="pipe-step pipe-final"><span class="pipe-dot"></span>Coach report</div>
+      </div>
+    </section>
+
+    <section class="section" id="demo">
+      <div class="section-head reveal">
+        <p class="eyebrow">In action</p>
+        <h2>Working software, not slideware</h2>
+      </div>
+      <div class="demo-grid">
+        <figure class="demo-item reveal">
+          <img src="assets/demo.gif" alt="Multi-source fusion pre-annotation workflow: fusion vote, one-click correction, and adjudication" loading="lazy">
+          <figcaption><strong>Pre-annotation studio.</strong> Three prediction sources are fused
+            into a single proposal; the expert confirms or corrects with one click.</figcaption>
+        </figure>
+        <figure class="demo-item reveal">
+          <img src="assets/lynxact-coach-top-moments-sample.png" alt="AI Coach Agent output: automatically identified top moments from a match" loading="lazy">
+          <figcaption><strong>Coach Agent output.</strong> The agent scans match data and
+            surfaces the moments that matter, with reasoning attached.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="opensource">
+      <div class="section-head reveal">
+        <p class="eyebrow">Open source</p>
+        <h2>Built in the open</h2>
+        <p class="section-sub">Our core pipelines are Apache-2.0 licensed. Star them, fork them,
+          or ship them into your own stack.</p>
+      </div>
+      <div class="repo-grid">
+        <a class="repo-card reveal" href="https://github.com/lynxact/lynxact-coach" target="_blank" rel="noopener">
+          <div class="repo-head">
+            <svg viewBox="0 0 16 16" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25v3.25a.25.25 0 0 0 .4.2l1.45-1.087a.249.249 0 0 1 .3 0L8.6 15.7a.25.25 0 0 0 .4-.2v-3.25a.25.25 0 0 0-.25-.25h-3.5a.25.25 0 0 0-.25.25Z"/></svg>
+            <span class="repo-name">lynxact-coach</span>
+            <span class="repo-license">Apache-2.0</span>
+          </div>
+          <p>AI Coach Agent for football tactical analysis — a four-tool function-calling
+            loop over match data, producing natural-language coaching reports.</p>
+        </a>
+        <a class="repo-card reveal" href="https://github.com/lynxact/lynxmove-oss" target="_blank" rel="noopener">
+          <div class="repo-head">
+            <svg viewBox="0 0 16 16" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25v3.25a.25.25 0 0 0 .4.2l1.45-1.087a.249.249 0 0 1 .3 0L8.6 15.7a.25.25 0 0 0 .4-.2v-3.25a.25.25 0 0 0-.25-.25h-3.5a.25.25 0 0 0-.25.25Z"/></svg>
+            <span class="repo-name">lynxmove-oss</span>
+            <span class="repo-license">Apache-2.0</span>
+          </div>
+          <p>Multi-source fusion pre-annotation toolkit for sports video — VLM proposals,
+            player-prior signals, and expert review in one web UI.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="company">
+      <div class="section-head reveal">
+        <p class="eyebrow">Company</p>
+        <h2>Built by practitioners</h2>
+      </div>
+      <div class="company-grid">
+        <div class="company-card reveal">
+          <h3>Hangzhou Lingxu Technology Co., Ltd.</h3>
+          <p class="company-cn">杭州凌序科技有限公司</p>
+          <p>LynxAct is developed by Hangzhou Lingxu Technology, a software company
+            founded in 2026 and headquartered in Hangzhou, China. We build AI tooling
+            for sports analysis — annotation pipelines, tracking infrastructure, and
+            LLM-powered reporting.</p>
+          <dl class="company-facts">
+            <div><dt>Founded</dt><dd>2026</dd></div>
+            <div><dt>Headquarters</dt><dd>Hangzhou, China</dd></div>
+            <div><dt>Focus</dt><dd>Sports AI · Video intelligence</dd></div>
+            <div><dt>Stage</dt><dd>Bootstrapped, pre-seed</dd></div>
+          </dl>
+        </div>
+        <div class="company-card reveal">
+          <h3>Founder</h3>
+          <p class="founder-name">Zhongjie Li</p>
+          <p>Zhongjie holds an M.Sc. in Physical Activity for Health from the
+            University of Edinburgh and has worked across sports data analysis and
+            R-based research pipelines. He started LynxAct to bring modern
+            vision-language and LLM tooling to a field still run on manual tagging.</p>
+          <p class="company-contact">Reach us at <a href="mailto:founder@lxlynx.com">founder@lxlynx.com</a></p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true">
+          <circle cx="50" cy="50" r="42" fill="none" stroke="currentColor" stroke-width="9"/>
+          <line x1="50" y1="8" x2="50" y2="92" stroke="currentColor" stroke-width="9"/>
+        </svg>
+        <span>Lynx<em>Act</em></span>
+      </div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="https://github.com/lynxact" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:founder@lxlynx.com">Contact</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
+      <p class="footer-legal">© 2026 Hangzhou Lingxu Technology Co., Ltd. · Hangzhou, China</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
