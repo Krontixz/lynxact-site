@@ -362,7 +362,8 @@ h2 {
 }
 .company-card h3 { font-size: 19px; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 6px; }
 .company-cn { color: var(--text-dim); font-size: 14px; margin-bottom: 16px; }
-.founder-name { color: var(--accent); font-size: 17px; font-weight: 600; margin-bottom: 14px; }
+.founder-name { color: var(--accent); font-size: 17px; font-weight: 600; margin-bottom: 4px; }
+.founder-title { color: var(--text-dim); font-size: 13px; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 14px; }
 .company-card > p { color: var(--text-dim); font-size: 15px; }
 .company-facts {
   margin-top: 24px;
